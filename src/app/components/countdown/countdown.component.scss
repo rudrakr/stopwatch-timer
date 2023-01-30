@@ -1,0 +1,150 @@
+p {
+    font-family: Lato;
+  }
+  body {
+    background: rgb(231, 231, 240);
+    background: radial-gradient(
+      circle,
+      rgba(231, 231, 240, 1) 3%,
+      rgba(178, 178, 185, 1) 39%,
+      rgba(172, 175, 179, 1) 96%
+    );
+  }
+  .main-display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* height: 80vh; */
+  }
+  .stopwatch {
+    border: 3px solid black;
+    padding: 10px 29px;
+    border-radius: 30px;
+    background: rgb(43, 43, 45);
+    background: linear-gradient(
+      90deg,
+      rgba(43, 43, 45, 1) 33%,
+      rgba(150, 150, 158, 1) 95%,
+      rgba(168, 174, 175, 1) 100%
+    );
+    color: #fff;
+  }
+  .stopwatch-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 400px;
+  }
+  .stopwatch-buttons button {
+    width: 120px;
+    height: 94px;
+    margin-top: 1px;
+    background: rgb(50, 50, 52);
+    background: linear-gradient(
+      90deg,
+      rgba(50, 50, 52, 1) 6%,
+      rgba(69, 69, 73, 1) 64%,
+      rgba(116, 120, 124, 1) 100%
+    );
+    border-radius: 20px;
+  }
+  .stopwatch-buttons button:hover {
+    transform: scale(1.15);
+    background: rgb(231, 231, 240);
+    background: linear-gradient(
+      90deg,
+      rgba(231, 231, 240, 1) 6%,
+      rgba(55, 55, 57, 1) 64%,
+      rgba(219, 223, 227, 1) 100%
+    );
+  }
+  .stopwatch span {
+    font-size: 100px;
+  }
+  .stopwatch div {
+    display: block;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 15px;
+  }
+  .stopwatch span:last-child {
+    font-size: 40px;
+  }
+  .material-icons {
+    font-size: 64px;
+    color: #fff;
+  }
+  .time-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .time-buttons button {
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    background: rgb(50, 50, 52);
+    background: linear-gradient(
+      90deg,
+      rgba(50, 50, 52, 1) 6%,
+      rgba(69, 69, 73, 1) 64%,
+      rgba(116, 120, 124, 1) 100%
+    );
+    border-radius: 20px;
+    color: #fff;
+  }
+  .time-buttons button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    background: rgb(231, 231, 240);
+    background: linear-gradient(
+      90deg,
+      rgba(231, 231, 240, 1) 6%,
+      rgba(55, 55, 57, 1) 64%,
+      rgba(219, 223, 227, 1) 100%
+    );
+  }
+  .timer-set {
+    justify-content: space-evenly;
+    display: flex;
+    width: 300px;
+    padding: 11px;
+  }
+  .timer-set button {
+    width: 110px;
+    height: 40px;
+    background: rgb(50, 50, 52);
+    background: linear-gradient(
+      90deg,
+      rgba(50, 50, 52, 1) 6%,
+      rgba(69, 69, 73, 1) 64%,
+      rgba(116, 120, 124, 1) 100%
+    );
+    border-radius: 20px;
+    color: #fff;
+  }
+  .timer-set button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    background: rgb(231, 231, 240);
+    background: linear-gradient(
+      90deg,
+      rgba(231, 231, 240, 1) 6%,
+      rgba(55, 55, 57, 1) 64%,
+      rgba(219, 223, 227, 1) 100%
+    );
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .stopwatch {
+      padding: 10px 14px;
+    }
+  }
+  

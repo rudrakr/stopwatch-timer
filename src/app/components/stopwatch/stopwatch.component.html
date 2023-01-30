@@ -1,0 +1,26 @@
+<div class="main-display">
+    <h2>StopWatch</h2>
+    <div>{{ timeToShow }}</div>
+    <div class="stopwatch">
+      <span>{{ hour | number: '2.0-0' }}:</span>
+      <span>{{ minute | number: '2.0-0' }}:</span>
+      <span>{{ sec | number: '2.0-0' }}</span>
+      <div>{{ miliSec }}</div>
+    </div>
+    <div class="stopwatch-buttons">
+      <button (click)="onClickStart()">
+        <i class="material-icons editor-fullscreen" title="fullscreen"
+          >play_arrow</i
+        >
+      </button>
+      <button (click)="onClickReset('pause')">
+        <i class="material-icons editor-fullscreen" title="fullscreen">pause</i>
+      </button>
+      <button (click)="onClickReset('reset')">
+        <i class="material-icons editor-fullscreen" title="fullscreen"
+          >restart_alt</i
+        >
+      </button>
+    </div>
+  </div>
+  

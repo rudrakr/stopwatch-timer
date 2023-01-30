@@ -1,0 +1,72 @@
+p {
+    font-family: Lato;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 140px;
+  }
+  #btn-wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  #btn-wrapper button {
+    width: 200px;
+    height: 44px;
+    margin-top: 1px;
+    background: rgb(50, 50, 52);
+    /* background: linear-gradient(
+      90deg,
+      rgba(50, 50, 52, 1) 6%,
+      rgba(69, 69, 73, 1) 64%,
+      rgba(116, 120, 124, 1) 100%
+    ); */
+    border-radius: 20px;
+    color: #fff;
+    /* color: black; */
+    font-size: 18px;
+    box-shadow: 3px 3px 14px 2px #212529;
+  }
+  
+  #btn-wrapper button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    background: rgb(231, 231, 240);
+    color: black;
+    font-weight: 600;
+    /* background: linear-gradient(
+      90deg,
+      rgba(231, 231, 240, 1) 6%,
+      rgba(55, 55, 57, 1) 64%,
+      rgba(219, 223, 227, 1) 100%
+    ); */
+  }
+  
+  .stopwatchPageLoad {
+    width: 200px !important;
+    height: 44px !important;
+    background: rgb(231, 231, 240) !important;
+    color: black !important;
+    font-weight: 600;
+    /* background: linear-gradient(
+      90deg,
+      rgba(231, 231, 240, 1) 6%,
+      rgba(55, 55, 57, 1) 64%,
+      rgba(219, 223, 227, 1) 100%
+    ) !important ; */
+    font-size: 18px;
+    box-shadow: 3px 3px 14px 2px #212529;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .btn-wrapper {
+      width: 350px;
+    }
+  }
+  

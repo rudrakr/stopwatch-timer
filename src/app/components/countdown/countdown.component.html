@@ -1,0 +1,35 @@
+<div class="main-display">
+    <h2>Countdown</h2>
+    <div>{{ timeToShow }}</div>
+    <div class="stopwatch">
+      <span>{{ hour | number: '2.0-0' }}:</span>
+      <span>{{ minute | number: '2.0-0' }}:</span
+      ><span>{{ sec | number: '2.0-0' }}</span>
+      <div>{{ miliSec }}</div>
+    </div>
+    <div *ngIf="showTimeSetButtons" class="time-buttons">
+      <button *ngFor="let item of timeButtons" (click)="onClickTime(item)">
+        {{ item }}
+      </button>
+    </div>
+    <div *ngIf="showTimeSetButtons" class="timer-set">
+      <button (click)="onClickSet()">Set</button>
+      <button (click)="onClickClear()">Clear</button>
+    </div>
+    <div *ngIf="!showTimeSetButtons" class="stopwatch-buttons">
+      <button (click)="onClickStart()">
+        <i class="material-icons editor-fullscreen" title="fullscreen"
+          >play_arrow</i
+        >
+      </button>
+      <button (click)="onClickReset('pause')">
+        <i class="material-icons editor-fullscreen" title="fullscreen">pause</i>
+      </button>
+      <button (click)="onClickReset('reset')">
+        <i class="material-icons editor-fullscreen" title="fullscreen"
+          >restart_alt</i
+        >
+      </button>
+    </div>
+  </div>
+  
